@@ -11,11 +11,11 @@
 
 <!--assigning variables  -->
 ###     Python example
-        ```python
+```python
         x = 10
         name = "Joe"
         print(name+"is"+ str(x)+"years old")
-        ```
+```
 
 ###     C++ example
 ```cpp
@@ -71,7 +71,7 @@ A data type defines the kind of value a variable can hold and how the computer s
     | NoneType | Represents absence of a value | x = None |
 
 ###     Python example
-        ```python
+```python
         x = 10
         print(type(x))
-        ```
+```
