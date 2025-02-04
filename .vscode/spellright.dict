@@ -1,0 +1,8 @@
+enum
+ptr
+arr
+bytearray
+memoryview
+dict
+frozenset
+ba
