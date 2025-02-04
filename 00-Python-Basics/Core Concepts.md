@@ -75,3 +75,50 @@ A data type defines the kind of value a variable can hold and how the computer s
         x = 10
         print(type(x))
 ```
+
+### C++ 
+    C++ is a statically typed language, meaning you must explicitly declare variable types.
+
+#### 1. Primitive Data Types
+    | Data Types |                Description                 |               example                 |
+    | :--------- | :----------------------------------------: | :-----------------------------------: |
+    |int         |Stores whole numbers                        |int x = 10;                            |
+    |float       |Stores decimal numbers (single precision)	  |float pi = 3.14f;                      |
+    |double      |Stores decimal numbers (double precision)	  |double pi = 3.14159;                   |
+    |char        |Stores a single character	                  |char letter = 'A';                     |
+    |bool        |Stores true or false	                      |bool status = true;                    |
+    |void        |Represents empty data type	              |Used for functions with no return type |
+
+
+#### 2. Derived Data Types
+    | Data Types  |            Description                  |        example          |
+    | :---------- | :-------------------------------------: | :---------------------: |
+    | string	  | Stores text (from <string> library)     | string name = "Alice";  |
+    | array	      | Stores multiple values of the same type | int arr[3] = {1, 2, 3}; |
+
+#### 3. Pointer type
+    | Data Types  |      Description      |     example    |
+    | :---------- | :-------------------: | :------------: |
+    | int*        | Stores memory address | int* ptr = &x; |
+
+#### 4. User-Defined Types
+    | Data Types  |            Description              |                  example                 |
+    | :---------- | :---------------------------------: | :--------------------------------------: |
+    |struct	      | Groups related variables	        | struct Person { string name; int age; }; |
+    |enum	      | Defines a set of named constants	| enum Color { RED, GREEN, BLUE };         |
+    |class	      | Blueprint for objects	            | class Car { public: string brand; };     |
+
+
+###     C++ example
+```cpp
+        #include <iostream>
+        #include <typeinfo>
+        using namespace std;
+
+        int main(){
+            int x = 10;
+            cout << typeid(x).name();
+
+            return 0;
+        }
+```
